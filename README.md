@@ -32,7 +32,8 @@ applications:
   - redshift
 ```
 
-## Endpoint
+## Endpoints
+The following endpoints are available
 
 | Endpoint | Description |
 |----------|-------------|
