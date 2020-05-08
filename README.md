@@ -18,6 +18,8 @@ See the below manifest.yml file as an example.
 ---
 applications:
 - name: rsdl
+  docker:
+    image: loafoe/rsdl:latest
   instances: 1
   memory: 64M
   disk_quota: 128M
