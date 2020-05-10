@@ -58,7 +58,7 @@ curl -uredshift:RandomPassw0rdHer3 https://my-rsdl.eu-west.philips-healthsuite.c
 * Use port `4443` in your URL e.g. `https://my-rsdl.eu-west.philips-healthsuite.com:4443/redshift/mydb/mytable`
 > Using port `4443` will allow the app to detect dropped connections. This ensures that streaming stops if the client connection is dropped. Otherwise the full request will continue to run potentially wasting resources and tying up a DB connection.
 
-* Try with and without GZIP compresion enabled
+* Try with and without GZIP compression enabled
 > If you have a very fast connection then compressing the data might actually make tranfers slower. When testing on a `500Mbit` fiber connection we found streaming data rates were higher with compression *disabled*.
 
   
