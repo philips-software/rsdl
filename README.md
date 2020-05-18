@@ -37,7 +37,7 @@ The following endpoints are available
 
 | Endpoint | Description |
 |----------|-------------|
-| `/redshift/default_schem/:table/full.csv` | Dumps `:table` from `default_schema` |
+| `/redshift/default_schema/:table/full.csv` | Dumps `:table` from `default_schema` |
 | `/redhsift/:schema/:table/full.csv` | Dumps `:table` from given `:schema`
 
 ## Configuration
