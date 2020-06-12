@@ -3,13 +3,11 @@ module rsdl
 go 1.14
 
 require (
-	github.com/aws/aws-sdk-go v1.30.9 // indirect
 	github.com/cloudfoundry-community/gautocloud v1.1.5
 	github.com/cloudfoundry-community/go-cfenv v1.18.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/golang/mock v1.4.3 // indirect
 	github.com/golang/protobuf v1.4.0 // indirect
-	github.com/hsdp/gautocloud-connectors v0.0.0-20200418103355-ed48b4f51ea0
 	github.com/inconshreveable/log15 v0.0.0-20200109203555-b30bc20e4fd1 // indirect
 	github.com/kevinburke/go-types v0.0.0-20200309064045-f2d4aea18a7a // indirect
 	github.com/kevinburke/rest v0.0.0-20200329062440-b3f4200b8f35 // indirect
@@ -21,6 +19,7 @@ require (
 	github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
 	github.com/pelletier/go-toml v1.7.0 // indirect
+	github.com/philips-software/gautocloud-connectors v0.0.0-20200612205717-0cb6142363c6
 	github.com/sirupsen/logrus v1.5.0 // indirect
 	github.com/spf13/afero v1.2.2 // indirect
 	github.com/spf13/cast v1.3.1 // indirect

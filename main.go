@@ -4,8 +4,7 @@ import (
 	"crypto/subtle"
 	"fmt"
 	"github.com/cloudfoundry-community/gautocloud"
-	"github.com/cloudfoundry-community/gautocloud/connectors/databases/dbtype"
-	_ "github.com/hsdp/gautocloud-connectors/hsdp"
+	"github.com/philips-software/gautocloud-connectors/hsdp"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/gommon/log"
@@ -50,7 +49,7 @@ func main() {
 	}
 
 	// Database
-	var rs *dbtype.PostgresqlDB
+	var rs *hsdp.PostgresSQLClient
 	err := gautocloud.Inject(&rs)
 	if err != nil {
 		log.Errorf("database error: %v", err)
@@ -83,7 +82,7 @@ func authCheck(username, password string, c echo.Context) (bool, error) {
 }
 
 // downloader queries and streams TAB separated CSV of a pg table
-func downloader(rs *dbtype.PostgresqlDB, schemaName string) echo.HandlerFunc {
+func downloader(rs *hsdp.PostgresSQLClient, schemaName string) echo.HandlerFunc {
 	return func(e echo.Context) error {
 		schema := e.Param("schema")
 		tableName := e.Param("tableName")
