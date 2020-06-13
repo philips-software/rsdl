@@ -2,10 +2,11 @@ package main
 
 import (
 	"crypto/subtle"
+	"database/sql"
 	"fmt"
 	"github.com/cloudfoundry-community/gautocloud"
 	"github.com/cloudfoundry-community/gautocloud/connectors/databases/dbtype"
-	_ "github.com/hsdp/gautocloud-connectors/hsdp"
+	"github.com/philips-software/gautocloud-connectors/hsdp"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/gommon/log"
@@ -49,13 +50,25 @@ func main() {
 		usePort = "8080"
 	}
 
-	// Database
+	var database *sql.DB
+	// PostgresSQL Database
+	var pq *hsdp.PostgresSQLClient
+	err1 := gautocloud.Inject(&pq)
+	if err1 == nil {
+		database = pq.DB
+	}
+	// Redshift Database
 	var rs *dbtype.PostgresqlDB
-	err := gautocloud.Inject(&rs)
-	if err != nil {
-		log.Errorf("database error: %v", err)
+	err2 := gautocloud.Inject(&rs)
+	if err2 == nil {
+		database = rs.DB
+
+	}
+	if database == nil {
+		log.Errorf("database error: postgres:[%v] redshift:[%v]", err1, err2)
 		return
 	}
+
 
 	// Webapp
 	e := echo.New()
@@ -67,8 +80,8 @@ func main() {
 	}
 	e.Use(middleware.BasicAuth(authCheck))
 	e.Use(middleware.Logger())
-	e.GET("/redshift/:tableName/:type", downloader(rs, schemaName))
-	e.GET("/redshift/:schema/:tableName/:type", downloader(rs, schemaName))
+	e.GET("/redshift/:tableName/:type", downloader(database, schemaName))
+	e.GET("/redshift/:schema/:tableName/:type", downloader(database, schemaName))
 	log.Fatal(e.Start(":" + usePort))
 	return
 }
@@ -83,7 +96,7 @@ func authCheck(username, password string, c echo.Context) (bool, error) {
 }
 
 // downloader queries and streams TAB separated CSV of a pg table
-func downloader(rs *dbtype.PostgresqlDB, schemaName string) echo.HandlerFunc {
+func downloader(rs *sql.DB, schemaName string) echo.HandlerFunc {
 	return func(e echo.Context) error {
 		schema := e.Param("schema")
 		tableName := e.Param("tableName")
