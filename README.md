@@ -1,6 +1,6 @@
 # RSDL
-Redhsift DownLoader is a small tool that allows one to stream
-Redshift tables and views as TAB Separated data. 
+Redshift DownLoader is a small tool that allows one to stream
+Redshift or PostgreSQL tables and views as TAB Separated data. 
 
 # Docker
 Use the included Dockerfile to build a docker image which can be deployed to CF directly.
