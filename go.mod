@@ -19,7 +19,7 @@ require (
 	github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
 	github.com/pelletier/go-toml v1.7.0 // indirect
-	github.com/philips-software/gautocloud-connectors v0.0.0-20200613091833-faa82d074ec0
+	github.com/philips-software/gautocloud-connectors v0.0.0-20200615153111-050a0b3822e9
 	github.com/sirupsen/logrus v1.5.0 // indirect
 	github.com/spf13/afero v1.2.2 // indirect
 	github.com/spf13/cast v1.3.1 // indirect

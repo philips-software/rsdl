@@ -231,6 +231,8 @@ github.com/philips-software/gautocloud-connectors v0.0.0-20200612205717-0cb61423
 github.com/philips-software/gautocloud-connectors v0.0.0-20200612205717-0cb6142363c6/go.mod h1:1C3of93w20iGtx+U3ysW/L0gKjiu0n3KtFbyoGmjyVA=
 github.com/philips-software/gautocloud-connectors v0.0.0-20200613091833-faa82d074ec0 h1:UYQ9lttjZIi4hMK4lu1odDIJHobozaHK1SR7C2EUptI=
 github.com/philips-software/gautocloud-connectors v0.0.0-20200613091833-faa82d074ec0/go.mod h1:1C3of93w20iGtx+U3ysW/L0gKjiu0n3KtFbyoGmjyVA=
+github.com/philips-software/gautocloud-connectors v0.0.0-20200615153111-050a0b3822e9 h1:/Gjqu4PKaF1SKCUTk07e93qMp9nVISUQnoCM7sFRGsc=
+github.com/philips-software/gautocloud-connectors v0.0.0-20200615153111-050a0b3822e9/go.mod h1:1C3of93w20iGtx+U3ysW/L0gKjiu0n3KtFbyoGmjyVA=
 github.com/pierrec/lz4 v2.0.5+incompatible h1:2xWsjqPFWcplujydGg4WmhC/6fZqK42wMM8aXeqhl0I=
 github.com/pierrec/lz4 v2.0.5+incompatible/go.mod h1:pdkljMzZIN41W+lC3N2tnIh5sFi+IEE17M5jbnwPHcY=
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

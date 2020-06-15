@@ -51,8 +51,8 @@ func main() {
 	}
 
 	var database *sql.DB
-	// PostgresSQL Database
-	var pq *hsdp.PostgresSQLClient
+	// PostgreSQL Database
+	var pq *hsdp.PostgreSQLClient
 	err1 := gautocloud.Inject(&pq)
 	if err1 == nil {
 		database = pq.DB
