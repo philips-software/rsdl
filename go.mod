@@ -15,7 +15,7 @@ require (
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/labstack/echo/v4 v4.3.0
 	github.com/labstack/gommon v0.3.0
-	github.com/lib/pq v1.3.0
+	github.com/lib/pq v1.10.2
 	github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
 	github.com/pelletier/go-toml v1.7.0 // indirect
