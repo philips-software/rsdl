@@ -3,7 +3,7 @@ module rsdl
 go 1.14
 
 require (
-	github.com/cloudfoundry-community/gautocloud v1.1.5
+	github.com/cloudfoundry-community/gautocloud v1.1.6
 	github.com/cloudfoundry-community/go-cfenv v1.18.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/golang/mock v1.4.3 // indirect
