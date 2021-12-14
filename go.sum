@@ -343,8 +343,8 @@ github.com/labstack/gommon v0.3.1/go.mod h1:uW6kP17uPlLJsD3ijUYn3/M5bAxtlZhMI6m3
 github.com/lib/pq v1.1.1/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
 github.com/lib/pq v1.3.0/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
 github.com/lib/pq v1.10.2/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
-github.com/lib/pq v1.10.3 h1:v9QZf2Sn6AmjXtQeFpdoq/eaNtYP6IN+7lcrygsIAtg=
-github.com/lib/pq v1.10.3/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
+github.com/lib/pq v1.10.4 h1:SO9z7FRPzA03QhHKJrH5BXA6HU1rS4V2nIVrrNC1iYk=
+github.com/lib/pq v1.10.4/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
 github.com/loafoe/go-eureka-client v0.0.0-20181122150342-305e9cc4dc71/go.mod h1:r0ZnzUUhNN/UFemPCf0Y7IuXNuMRu0kkWt42WWMgkus=
 github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb h1:lSrHQhzrXHpeM5GcpC7T0G2sYI3XLxvVs2PKjmva4gQ=
 github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb/go.mod h1:O01uUg29Cmt60iy6sG7cznflL8ZpdP4sGDExsS6VEZM=
