@@ -10,7 +10,7 @@ require (
 	github.com/kevinburke/twilio-go v0.0.0-20200203063821-378e630e02da // indirect
 	github.com/labstack/echo/v4 v4.7.2
 	github.com/labstack/gommon v0.3.1
-	github.com/lib/pq v1.10.5
+	github.com/lib/pq v1.10.6
 	github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb
 	github.com/philips-software/gautocloud-connectors v0.0.0-20200615153111-050a0b3822e9
 	github.com/spf13/viper v1.12.0
