@@ -3,7 +3,7 @@ module rsdl
 go 1.14
 
 require (
-	github.com/cloudfoundry-community/gautocloud v1.1.10
+	github.com/cloudfoundry-community/gautocloud v1.1.11
 	github.com/inconshreveable/log15 v0.0.0-20200109203555-b30bc20e4fd1 // indirect
 	github.com/kevinburke/go-types v0.0.0-20200309064045-f2d4aea18a7a // indirect
 	github.com/kevinburke/rest v0.0.0-20200329062440-b3f4200b8f35 // indirect
