@@ -14,6 +14,6 @@ require (
 	github.com/lib/pq v1.10.9
 	github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb
 	github.com/philips-software/gautocloud-connectors v0.7.0
-	github.com/spf13/viper v1.17.0
+	github.com/spf13/viper v1.18.2
 	github.com/ttacon/libphonenumber v1.1.0 // indirect
 )
