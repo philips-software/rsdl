@@ -15,6 +15,6 @@ require (
 	github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/philips-software/gautocloud-connectors v0.7.0
-	github.com/spf13/viper v1.18.2
+	github.com/spf13/viper v1.19.0
 	github.com/ttacon/libphonenumber v1.1.0 // indirect
 )
