@@ -9,7 +9,7 @@ require (
 	github.com/kevinburke/go-types v0.0.0-20200309064045-f2d4aea18a7a // indirect
 	github.com/kevinburke/rest v0.0.0-20200329062440-b3f4200b8f35 // indirect
 	github.com/kevinburke/twilio-go v0.0.0-20200203063821-378e630e02da // indirect
-	github.com/labstack/echo/v4 v4.13.1
+	github.com/labstack/echo/v4 v4.13.3
 	github.com/labstack/gommon v0.4.2
 	github.com/lib/pq v1.10.9
 	github.com/loafoe/sqltocsv v0.0.0-20200421080913-1d34850504cb
