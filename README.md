@@ -1,3 +1,5 @@
+# This project is DEPRECATED
+
 # RSDL
 Redshift DownLoader is a small tool that allows one to stream
 Redshift or PostgreSQL tables and views as TAB Separated data. 
